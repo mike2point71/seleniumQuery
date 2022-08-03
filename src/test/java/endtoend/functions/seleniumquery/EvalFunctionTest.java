@@ -1,6 +1,6 @@
 package endtoend.functions.seleniumquery;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.ClassRule;

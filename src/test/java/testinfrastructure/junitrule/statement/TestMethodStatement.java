@@ -1,6 +1,6 @@
 package testinfrastructure.junitrule.statement;
 
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 import org.openqa.selenium.WebDriver;

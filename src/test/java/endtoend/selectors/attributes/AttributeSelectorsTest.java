@@ -16,8 +16,8 @@
 
 package endtoend.selectors.attributes;
 
-import io.github.seleniumquery.SeleniumQueryException;
-import io.github.seleniumquery.by.firstgen.css.CssSelectorMatcherService;
+import ht.mikewrig.seleniumquery.SeleniumQueryException;
+import ht.mikewrig.seleniumquery.by.firstgen.css.CssSelectorMatcherService;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
@@ -27,7 +27,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 

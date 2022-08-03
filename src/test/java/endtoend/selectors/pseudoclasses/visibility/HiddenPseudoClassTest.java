@@ -16,7 +16,7 @@
 
 package endtoend.selectors.pseudoclasses.visibility;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
@@ -32,8 +32,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.by.firstgen.css.pseudoclasses.PseudoClassOnlySupportedThroughIsOrFilterException;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.by.firstgen.css.pseudoclasses.PseudoClassOnlySupportedThroughIsOrFilterException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class HiddenPseudoClassTest {

@@ -16,7 +16,7 @@
 
 package testinfrastructure.testdouble.org.openqa.selenium;
 
-import io.github.seleniumquery.by.SeleniumQueryBy;
+import ht.mikewrig.seleniumquery.by.SeleniumQueryBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;

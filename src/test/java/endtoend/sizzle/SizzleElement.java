@@ -16,7 +16,7 @@
 
 package endtoend.sizzle;
 
-import io.github.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
@@ -27,7 +27,7 @@ import testinfrastructure.testutils.DriverInTest;
 
 import java.util.ArrayList;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static java.util.Arrays.asList;
 
 public class SizzleElement extends SizzleTest {

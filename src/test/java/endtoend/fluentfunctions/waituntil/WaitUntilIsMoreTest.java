@@ -16,14 +16,14 @@
 
 package endtoend.fluentfunctions.waituntil;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 
-import io.github.seleniumquery.wait.SeleniumQueryTimeoutException;
+import ht.mikewrig.seleniumquery.wait.SeleniumQueryTimeoutException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class WaitUntilIsMoreTest {

@@ -16,7 +16,7 @@
 
 package testinfrastructure;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -27,9 +27,9 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import testinfrastructure.testutils.SauceLabsUtils;
 
 public class EndToEndTestUtils {

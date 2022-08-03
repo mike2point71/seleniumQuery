@@ -18,7 +18,7 @@ package endtoend.browser.driver.builders;
 
 import static endtoend.browser.util.JsOnOffTestUtils.assertJavaScriptIsOff;
 import static endtoend.browser.util.JsOnOffTestUtils.assertJavaScriptIsOn;
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.containsString;
 import static org.openqa.selenium.remote.CapabilityType.SUPPORTS_JAVASCRIPT;

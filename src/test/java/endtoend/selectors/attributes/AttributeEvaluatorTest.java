@@ -16,12 +16,12 @@
 
 package endtoend.selectors.attributes;
 
-import io.github.seleniumquery.by.firstgen.css.attributes.ContainsWordAttributeCssSelector;
-import io.github.seleniumquery.by.firstgen.css.attributes.EndsWithAttributeCssSelector;
-import io.github.seleniumquery.by.firstgen.css.attributes.EqualsOrHasAttributeCssSelector;
-import io.github.seleniumquery.by.firstgen.css.attributes.StartsWithAttributeCssSelector;
-import io.github.seleniumquery.by.firstgen.xpath.TagComponentList;
-import io.github.seleniumquery.by.firstgen.xpath.XPathComponentCompilerService;
+import ht.mikewrig.seleniumquery.by.firstgen.css.attributes.ContainsWordAttributeCssSelector;
+import ht.mikewrig.seleniumquery.by.firstgen.css.attributes.EndsWithAttributeCssSelector;
+import ht.mikewrig.seleniumquery.by.firstgen.css.attributes.EqualsOrHasAttributeCssSelector;
+import ht.mikewrig.seleniumquery.by.firstgen.css.attributes.StartsWithAttributeCssSelector;
+import ht.mikewrig.seleniumquery.by.firstgen.xpath.TagComponentList;
+import ht.mikewrig.seleniumquery.by.firstgen.xpath.XPathComponentCompilerService;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
@@ -31,7 +31,7 @@ import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import java.util.Iterator;
 import java.util.List;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

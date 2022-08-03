@@ -16,7 +16,7 @@
 
 package endtoend.browser.driver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.junit.Assert.assertThat;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebDriverQuitSpy.createWebDriverQuitSpy;

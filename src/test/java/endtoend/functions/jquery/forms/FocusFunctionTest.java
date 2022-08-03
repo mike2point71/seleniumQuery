@@ -17,8 +17,8 @@
 package endtoend.functions.jquery.forms;
 
 import endtoend.functions.jquery.events.ClickFunctionTest;
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.by.firstgen.css.pseudoclasses.PseudoClassOnlySupportedThroughIsOrFilterException;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.by.firstgen.css.pseudoclasses.PseudoClassOnlySupportedThroughIsOrFilterException;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
@@ -27,7 +27,7 @@ import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import testinfrastructure.junitrule.annotation.JavaScriptEnabledOnly;
 import testinfrastructure.testutils.DriverInTest;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static testinfrastructure.testutils.DriverInTest.isIEDriver;

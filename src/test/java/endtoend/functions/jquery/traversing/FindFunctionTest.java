@@ -16,13 +16,13 @@
 
 package endtoend.functions.jquery.traversing;
 
-import io.github.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 

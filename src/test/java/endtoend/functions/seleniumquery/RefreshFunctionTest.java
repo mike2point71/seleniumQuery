@@ -1,13 +1,13 @@
 package endtoend.functions.seleniumquery;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
-import io.github.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import testinfrastructure.junitrule.annotation.JavaScriptEnabledOnly;
 

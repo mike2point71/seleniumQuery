@@ -16,8 +16,8 @@
 
 package endtoend.selectors;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.utils.SelectorUtils;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.utils.SelectorUtils;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;

@@ -25,7 +25,7 @@ import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 import endtoend.browser.util.BrowserAgentTestUtils;
 import testinfrastructure.testdouble.org.openqa.selenium.WebDriverQuitSpy;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.junit.Assert.assertThat;

@@ -16,7 +16,7 @@
 
 package endtoend.sizzle;
 
-import io.github.seleniumquery.utils.SelectorUtils;
+import ht.mikewrig.seleniumquery.utils.SelectorUtils;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;

@@ -16,7 +16,7 @@
 
 package endtoend.browser.driver.builders;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assume.assumeTrue;
 
 import org.junit.After;
@@ -30,7 +30,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import endtoend.browser.util.DriverBuilderTestUtil;
 import endtoend.browser.util.HeadlessTestUtils;
 import endtoend.browser.util.JsOnOffTestUtils;
-import io.github.seleniumquery.SeleniumQueryException;
+import ht.mikewrig.seleniumquery.SeleniumQueryException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class FirefoxDriverBuilderTest {

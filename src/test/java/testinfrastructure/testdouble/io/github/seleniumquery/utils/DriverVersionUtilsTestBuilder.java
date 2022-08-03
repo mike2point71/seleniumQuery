@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.io.github.seleniumquery.utils;
+package testinfrastructure.testdouble.ht.mikewrig.seleniumquery.utils;
 
-import io.github.seleniumquery.utils.DriverVersionUtils;
+import ht.mikewrig.seleniumquery.utils.DriverVersionUtils;
 import org.openqa.selenium.WebDriver;
 
 public class DriverVersionUtilsTestBuilder {

@@ -22,7 +22,7 @@ import java.lang.annotation.Annotation;
 import java.util.List;
 import java.util.function.Consumer;
 
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import testinfrastructure.junitrule.annotation.ChromeOnly;
 import testinfrastructure.junitrule.annotation.EdgeOnly;
 import testinfrastructure.junitrule.annotation.FirefoxOnly;

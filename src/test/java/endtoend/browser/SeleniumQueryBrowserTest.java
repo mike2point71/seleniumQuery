@@ -31,8 +31,8 @@ import org.openqa.selenium.WebElement;
 
 import endtoend.browser.driver.builders.HtmlUnitDriverBuilderTest;
 import endtoend.browser.util.BrowserAgentTestUtils;
-import io.github.seleniumquery.SeleniumQueryBrowser;
-import io.github.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryBrowser;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 
 public class SeleniumQueryBrowserTest {
 

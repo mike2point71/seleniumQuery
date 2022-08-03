@@ -17,7 +17,7 @@
 package endtoend.functions.jquery.traversing.filtering;
 
 import com.google.common.base.Predicate;
-import io.github.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
@@ -25,7 +25,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static java.lang.String.format;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

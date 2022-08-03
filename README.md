@@ -1,6 +1,6 @@
 # [seleniumQuery](http://seleniumquery.github.io)
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.seleniumquery/seleniumquery.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22io.github.seleniumquery%22%20AND%20a%3A%22seleniumquery%22)
+[![Maven Central](https://img.shields.io/maven-central/v/ht.mikewrig.seleniumquery/seleniumquery.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22ht.mikewrig.seleniumquery%22%20AND%20a%3A%22seleniumquery%22)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/6f25f5fe245746a4a7a53f426e0e1288)](https://www.codacy.com/app/acdcjunior/seleniumQuery)
 [![codecov.io](https://codecov.io/gh/seleniumQuery/seleniumQuery/branch/master/graph/badge.svg)](https://codecov.io/gh/seleniumQuery/seleniumQuery)
@@ -89,7 +89,7 @@ Built using Selenium WebDriver's capabilities, no `jQuery.js` is embedded at the
 Try it out now with the running example below:
 
 ```java
-import static io.github.seleniumquery.SeleniumQuery.$; // this will allow the short syntax
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$; // this will allow the short syntax
 
 public class SeleniumQueryExample {
   public static void main(String[] args) {
@@ -134,7 +134,7 @@ To get the latest version of seleniumQuery, add to your **`pom.xml`**:
 
 ```xml
 <dependency>
-    <groupId>io.github.seleniumquery</groupId>
+    <groupId>ht.mikewrig.seleniumquery</groupId>
     <artifactId>seleniumquery</artifactId>
     <version>0.20.0</version>
 </dependency>
@@ -1056,7 +1056,7 @@ $.driver().useInternetExplorer().withPathToIEDriverServerExe("C:\\IEDriverServer
 
 ### Available `$("selector").functions()`
 
-Check the [javadocs for our `$().functions`](https://static.javadoc.io/io.github.seleniumquery/seleniumquery/0.19.1/index.html?io/github/seleniumquery/SeleniumQueryObject.html).
+Check the [javadocs for our `$().functions`](https://static.javadoc.io/ht.mikewrig.seleniumquery/seleniumquery/0.19.1/index.html?io/github/seleniumquery/SeleniumQueryObject.html).
 
 More info also in our [API wiki page](https://github.com/seleniumQuery/seleniumQuery/wiki/seleniumQuery-API).
 
@@ -1064,7 +1064,7 @@ More info also in our [API wiki page](https://github.com/seleniumQuery/seleniumQ
 
 ### Available `$.functions()`
 
-Check the [javadocs for our `$.functions`](https://static.javadoc.io/io.github.seleniumquery/seleniumquery/0.19.1/index.html?io/github/seleniumquery/browser/BrowserFunctions.html).
+Check the [javadocs for our `$.functions`](https://static.javadoc.io/ht.mikewrig.seleniumquery/seleniumquery/0.19.1/index.html?io/github/seleniumquery/browser/BrowserFunctions.html).
 
 Read about our global functions in the [API wiki page](https://github.com/seleniumQuery/seleniumQuery/wiki/seleniumQuery-API).
 
@@ -1167,8 +1167,8 @@ For an example of how to create your own plugin, check the [seleniumQuery Plugin
 If the dollar symbol, `$`, gives you the yikes -- we know, it is used for internal class names --, it is important to notice that the `$` symbol in seleniumQuery is not a class name, but a `static` method (and field). Still, if you don't feel like using it, you can resort to `sQ()` or good ol' `jQuery()` and benefit from all the same goodies:
 
 ```java
-import static io.github.seleniumquery.SeleniumQuery.sQ;
-import static io.github.seleniumquery.SeleniumQuery.jQuery;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.sQ;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.jQuery;
 ...
 String oldStreet = sQ("input.street").val();
 sQ("input.street").val("4th St!");

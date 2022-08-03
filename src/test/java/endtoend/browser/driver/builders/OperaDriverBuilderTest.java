@@ -16,7 +16,7 @@
 
 package endtoend.browser.driver.builders;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assume.assumeTrue;
 
@@ -30,7 +30,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import endtoend.browser.util.BrowserAgentTestUtils;
 import endtoend.browser.util.DriverBuilderTestUtil;
-import io.github.seleniumquery.SeleniumQueryException;
+import ht.mikewrig.seleniumquery.SeleniumQueryException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class OperaDriverBuilderTest {

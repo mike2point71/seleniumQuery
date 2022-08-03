@@ -26,9 +26,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import testinfrastructure.EndToEndTestUtils;
 
 public class SeleniumQueryTest {

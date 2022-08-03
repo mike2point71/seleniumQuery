@@ -16,7 +16,7 @@
 
 package endtoend.selectors.pseudoclasses;
 
-import io.github.seleniumquery.by.firstgen.css.CssSelectorMatcherService;
+import ht.mikewrig.seleniumquery.by.firstgen.css.CssSelectorMatcherService;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
@@ -28,7 +28,7 @@ import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 import java.util.List;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 

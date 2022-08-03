@@ -1,6 +1,6 @@
 package endtoend.browser.util;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assert.assertEquals;
 import static testinfrastructure.EndToEndTestUtils.classNameToTestFileUrl;
 

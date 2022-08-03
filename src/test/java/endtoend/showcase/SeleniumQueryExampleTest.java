@@ -16,7 +16,7 @@
 
 package endtoend.showcase;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assume.assumeTrue;
 
 import org.junit.After;

@@ -22,7 +22,7 @@ import org.junit.Test;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 import static endtoend.selectors.combinators.DirectAdjacentSelectorTest.SPAN_DIRECTLY_ADJACENT_TO_P_ID;
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static java.lang.String.format;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

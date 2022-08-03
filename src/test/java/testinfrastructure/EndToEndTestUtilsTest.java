@@ -16,11 +16,11 @@
 
 package testinfrastructure;
 
-import io.github.seleniumquery.SeleniumQueryBrowser;
+import ht.mikewrig.seleniumquery.SeleniumQueryBrowser;
 import org.junit.Test;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static testinfrastructure.EndToEndTestUtils.classNameToTestFileUrl;

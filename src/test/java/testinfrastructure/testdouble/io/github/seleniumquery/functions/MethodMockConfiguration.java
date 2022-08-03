@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.io.github.seleniumquery.functions;
+package testinfrastructure.testdouble.ht.mikewrig.seleniumquery.functions;
 
 import org.hamcrest.collection.IsArrayWithSize;
 import org.junit.Assert;

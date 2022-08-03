@@ -22,8 +22,8 @@ import static testinfrastructure.EndToEndTestUtils.classNameToTestFileUrl;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.SeleniumQueryBrowser;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.SeleniumQueryBrowser;
 
 public class BrowserAgentTestUtils {
 

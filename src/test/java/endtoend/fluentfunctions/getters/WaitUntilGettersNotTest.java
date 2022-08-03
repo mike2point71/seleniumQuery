@@ -16,7 +16,7 @@
 
 package endtoend.fluentfunctions.getters;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -28,7 +28,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 
-import io.github.seleniumquery.SeleniumQueryWaitAndOrThen;
+import ht.mikewrig.seleniumquery.SeleniumQueryWaitAndOrThen;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import testinfrastructure.junitrule.annotation.JavaScriptEnabledOnly;
 

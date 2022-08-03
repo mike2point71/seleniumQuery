@@ -35,8 +35,8 @@ import java.util.List;
 
 import org.junit.runners.model.Statement;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import testinfrastructure.junitrule.TestClassSession;
 import testinfrastructure.junitrule.config.DriverInstantiator;
 import testinfrastructure.junitrule.config.DriverToRunTestsIn;

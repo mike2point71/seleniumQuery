@@ -1,6 +1,6 @@
 package endtoend.functions.jquery.forms.val;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 
 import org.junit.ClassRule;
 import org.junit.Rule;

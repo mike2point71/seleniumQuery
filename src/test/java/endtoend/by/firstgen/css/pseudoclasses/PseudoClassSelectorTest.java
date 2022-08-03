@@ -1,12 +1,12 @@
 package endtoend.by.firstgen.css.pseudoclasses;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 
-import io.github.seleniumquery.by.firstgen.css.pseudoclasses.UnsupportedPseudoClassException;
+import ht.mikewrig.seleniumquery.by.firstgen.css.pseudoclasses.UnsupportedPseudoClassException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class PseudoClassSelectorTest {

@@ -21,7 +21,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.jQuery;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.jQuery;
 import static java.util.Arrays.asList;
 import static testinfrastructure.EndToEndTestUtils.*;
 

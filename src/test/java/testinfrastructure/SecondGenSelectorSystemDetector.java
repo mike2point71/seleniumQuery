@@ -1,11 +1,11 @@
 package testinfrastructure;
 
-import io.github.seleniumquery.by.SeleniumQueryBy;
+import ht.mikewrig.seleniumquery.by.SeleniumQueryBy;
 import org.junit.Assume;
 
 import java.lang.reflect.Field;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;

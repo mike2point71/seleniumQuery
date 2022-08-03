@@ -16,8 +16,8 @@
 
 package endtoend.selectors.combinators;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.by.firstgen.css.CssSelectorMatcherService;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.by.firstgen.css.CssSelectorMatcherService;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;

@@ -1,6 +1,6 @@
 package testinfrastructure.junitrule.config;
 
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import testinfrastructure.junitrule.annotation.*;

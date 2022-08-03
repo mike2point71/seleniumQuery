@@ -162,7 +162,7 @@ org.w3c.css.sac.CSSParseException: Error in class selector. (Invalid token "<EOF
 	at com.steadystate.css.parser.SACParserCSS3.parseSelectorsInternal(SACParserCSS3.java:1102)
 	at com.steadystate.css.parser.AbstractSACParser.parseSelectors(AbstractSACParser.java:345)
 	at com.steadystate.css.parser.SACParserCSS3.parseSelectors(SACParserCSS3.java:23)
-	at io.github.seleniumquery.selector.parser.SelectorParser.parseSelector(SelectorParser.java:24)
+	at ht.mikewrig.seleniumquery.selector.parser.SelectorParser.parseSelector(SelectorParser.java:24)
 ```
 
 

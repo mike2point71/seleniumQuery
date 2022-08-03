@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.io.github.seleniumquery;
+package testinfrastructure.testdouble.ht.mikewrig.seleniumquery;
 
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.functions.SeleniumQueryFunctions;
-import io.github.seleniumquery.internal.SqObjectFactory;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.functions.SeleniumQueryFunctions;
+import ht.mikewrig.seleniumquery.internal.SqObjectFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectDummy.createSeleniumQueryObjectDummy;
+import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectDummy.createSeleniumQueryObjectDummy;
 import static testinfrastructure.testdouble.org.openqa.selenium.ByToStringableDummy.createByToStringableDummy;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebDriverDummy.createWebDriverDummy;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebElementDummy.createWebElementDummy;

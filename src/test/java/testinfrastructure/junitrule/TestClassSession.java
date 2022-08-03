@@ -1,6 +1,6 @@
 package testinfrastructure.junitrule;
 
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import testinfrastructure.junitrule.config.DriverToRunTestsIn;
 import testinfrastructure.junitrule.statement.TestClassInConfiguredDriversStatement;
 

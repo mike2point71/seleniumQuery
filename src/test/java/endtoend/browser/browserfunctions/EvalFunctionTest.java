@@ -1,6 +1,6 @@
 package endtoend.browser.browserfunctions;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 
 import org.junit.ClassRule;
 import org.junit.Rule;

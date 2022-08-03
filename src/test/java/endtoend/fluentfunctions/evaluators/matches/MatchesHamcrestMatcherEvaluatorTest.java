@@ -16,7 +16,7 @@
 
 package endtoend.fluentfunctions.evaluators.matches;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -25,8 +25,8 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 
-import io.github.seleniumquery.fluentfunctions.assertthat.SeleniumQueryAssertionError;
-import io.github.seleniumquery.fluentfunctions.waituntil.SeleniumQueryTimeoutException;
+import ht.mikewrig.seleniumquery.fluentfunctions.assertthat.SeleniumQueryAssertionError;
+import ht.mikewrig.seleniumquery.fluentfunctions.waituntil.SeleniumQueryTimeoutException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import testinfrastructure.junitrule.annotation.JavaScriptEnabledOnly;
 

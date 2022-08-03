@@ -16,7 +16,7 @@
 
 package endtoend.fluentfunctions.assertthat;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -25,11 +25,11 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 
-import io.github.seleniumquery.SeleniumQueryFluentAndOrThen;
-import io.github.seleniumquery.SeleniumQueryFluentFunction;
-import io.github.seleniumquery.SeleniumQueryFluentFunctionEvaluateIf;
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.fluentfunctions.assertthat.SeleniumQueryAssertionError;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentAndOrThen;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentFunction;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentFunctionEvaluateIf;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.fluentfunctions.assertthat.SeleniumQueryAssertionError;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class AssertThatTest {

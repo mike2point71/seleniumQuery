@@ -16,7 +16,7 @@
 
 package endtoend.functions.jquery.forms;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.CoreMatchers.endsWith;
 import static org.junit.Assert.assertThat;
 

@@ -16,7 +16,7 @@
 
 package endtoend.functions.jquery.traversing;
 
-import io.github.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
@@ -27,7 +27,7 @@ import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 

@@ -16,8 +16,8 @@
 
 package testinfrastructure.testutils;
 
-import io.github.seleniumquery.browser.BrowserFunctions;
-import io.github.seleniumquery.utils.DriverVersionUtils;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.utils.DriverVersionUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -28,8 +28,8 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import static io.github.seleniumquery.utils.DriverVersionUtils.isDriver;
-import static io.github.seleniumquery.utils.DriverVersionUtils.isDriverByName;
+import static ht.mikewrig.seleniumquery.utils.DriverVersionUtils.isDriver;
+import static ht.mikewrig.seleniumquery.utils.DriverVersionUtils.isDriverByName;
 
 /**
  * No test code may use {@link DriverVersionUtils} directly to test the browser under test, because it may

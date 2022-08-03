@@ -5,8 +5,8 @@ import static org.junit.Assert.fail;
 
 import java.util.function.Consumer;
 
-import io.github.seleniumquery.fluentfunctions.assertthat.SeleniumQueryAssertionError;
-import io.github.seleniumquery.fluentfunctions.waituntil.SeleniumQueryTimeoutException;
+import ht.mikewrig.seleniumquery.fluentfunctions.assertthat.SeleniumQueryAssertionError;
+import ht.mikewrig.seleniumquery.fluentfunctions.waituntil.SeleniumQueryTimeoutException;
 
 public class EvaluatorsExceptionTestUtils {
 

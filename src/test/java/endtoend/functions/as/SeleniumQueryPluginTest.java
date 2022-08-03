@@ -16,13 +16,13 @@
 
 package endtoend.functions.as;
 
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.functions.as.SeleniumQueryPlugin;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.functions.as.SeleniumQueryPlugin;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static testinfrastructure.EndToEndTestUtils.classNameToTestFileUrl;

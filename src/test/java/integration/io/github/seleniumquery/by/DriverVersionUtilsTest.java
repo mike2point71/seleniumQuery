@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package integration.io.github.seleniumquery.by;
+package integration.ht.mikewrig.seleniumquery.by;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -29,7 +29,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
-import io.github.seleniumquery.utils.DriverVersionUtils;
+import ht.mikewrig.seleniumquery.utils.DriverVersionUtils;
 import testinfrastructure.testdouble.PseudoTestDoubleException;
 import testinfrastructure.testdouble.org.openqa.selenium.WebDriverDummy;
 import testinfrastructure.testutils.DriverInTest;

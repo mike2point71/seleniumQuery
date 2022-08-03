@@ -16,13 +16,13 @@
 
 package testinfrastructure.testutils;
 
-import io.github.seleniumquery.SeleniumQuery;
-import io.github.seleniumquery.browser.BrowserFunctions;
+import ht.mikewrig.seleniumquery.SeleniumQuery;
+import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.eclipse.jetty.util.StringUtil.isNotBlank;
 
 public class SauceLabsUtils {

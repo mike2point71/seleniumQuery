@@ -17,4 +17,5 @@ errorPage.png
 
 # Gradle
 build/
-.gradle/
+.gradle/.DS_Store
+**/.DS_Store

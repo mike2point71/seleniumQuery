@@ -1,6 +1,6 @@
 package endtoend.selectors.pseudoclasses.positional;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;

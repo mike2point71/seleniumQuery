@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.io.github.seleniumquery;
+package testinfrastructure.testdouble.ht.mikewrig.seleniumquery;
 
 import java.util.Iterator;
 import java.util.List;
@@ -25,11 +25,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.google.common.base.Predicate;
-import io.github.seleniumquery.SeleniumQueryFluentFunction;
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.functions.SeleniumQueryFunctions;
-import io.github.seleniumquery.functions.as.SeleniumQueryPlugin;
-import io.github.seleniumquery.functions.as.StandardPlugins;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentFunction;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.functions.SeleniumQueryFunctions;
+import ht.mikewrig.seleniumquery.functions.as.SeleniumQueryPlugin;
+import ht.mikewrig.seleniumquery.functions.as.StandardPlugins;
 import testinfrastructure.testdouble.PseudoTestDoubleException;
 
 /**

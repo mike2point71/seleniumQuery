@@ -1,6 +1,6 @@
 package endtoend.utils;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 
 import org.junit.Assert;
 import org.junit.ClassRule;
@@ -9,8 +9,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.utils.DriverVersionUtils;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.utils.DriverVersionUtils;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class WebElementUtilsTest {

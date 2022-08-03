@@ -16,7 +16,7 @@
 
 package endtoend.crossdriver.driverbugs;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
 import static testinfrastructure.testutils.EnvironmentTestUtils.isNotWindowsOS;

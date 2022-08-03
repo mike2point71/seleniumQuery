@@ -16,7 +16,7 @@
 
 package endtoend.fluentfunctions.waituntil;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -24,14 +24,14 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 
-import io.github.seleniumquery.SeleniumQueryFluentAndOrThen;
-import io.github.seleniumquery.SeleniumQueryFluentFunction;
-import io.github.seleniumquery.SeleniumQueryFluentFunctionEvaluateIf;
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.SeleniumQueryWaitAndOrThen;
-import io.github.seleniumquery.SeleniumQueryWaitEvaluateUntil;
-import io.github.seleniumquery.SeleniumQueryWaitUntil;
-import io.github.seleniumquery.fluentfunctions.waituntil.SeleniumQueryTimeoutException;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentAndOrThen;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentFunction;
+import ht.mikewrig.seleniumquery.SeleniumQueryFluentFunctionEvaluateIf;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.SeleniumQueryWaitAndOrThen;
+import ht.mikewrig.seleniumquery.SeleniumQueryWaitEvaluateUntil;
+import ht.mikewrig.seleniumquery.SeleniumQueryWaitUntil;
+import ht.mikewrig.seleniumquery.fluentfunctions.waituntil.SeleniumQueryTimeoutException;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class WaitUntilTest {
@@ -50,7 +50,7 @@ public class WaitUntilTest {
     }
 
     @SuppressWarnings("deprecation")
-    @Test(expected = io.github.seleniumquery.wait.SeleniumQueryTimeoutException.class)
+    @Test(expected = ht.mikewrig.seleniumquery.wait.SeleniumQueryTimeoutException.class)
     public void waitUntil__text__contains__FAIL__deprecated_exception() {
     	$("#sq").waitUntil(100).text().contains("abc");
     	fail();

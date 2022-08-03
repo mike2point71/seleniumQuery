@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.io.github.seleniumquery.functions;
+package testinfrastructure.testdouble.ht.mikewrig.seleniumquery.functions;
 
-import io.github.seleniumquery.SeleniumQueryObject;
-import io.github.seleniumquery.functions.SeleniumQueryFunctions;
+import ht.mikewrig.seleniumquery.SeleniumQueryObject;
+import ht.mikewrig.seleniumquery.functions.SeleniumQueryFunctions;
 import org.openqa.selenium.WebElement;
 import testinfrastructure.testdouble.PseudoTestDoubleException;
 
