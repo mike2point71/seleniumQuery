@@ -22,7 +22,7 @@ import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObject;
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObject;
 
 public class FunctionsTestUtils {
 

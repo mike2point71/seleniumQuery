@@ -28,7 +28,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 import testinfrastructure.junitrule.annotation.ChromeOnly;
@@ -85,7 +84,7 @@ public class SeleniumQueryDriverOthersTest {
         previousDriver.assertDriverWasNotQuit();
         try {
             // when
-            $.driver().useInternetExplorer();
+            $.driver().useChrome();
             WebDriver driver = $.driver().get();
             // then
             previousDriver.assertDriverWasQuit();
@@ -104,11 +103,11 @@ public class SeleniumQueryDriverOthersTest {
         previousDriver.assertDriverWasNotQuit();
         try {
             // when
-            $.driver().usePhantomJS();
+            $.driver().useChrome();
             WebDriver driver = $.driver().get();
             // then
             previousDriver.assertDriverWasQuit();
-            assertThat(driver, instanceOf(PhantomJSDriver.class));
+            assertThat(driver, instanceOf(ChromeDriver.class));
         } finally {
             $.driver().quit();
         }

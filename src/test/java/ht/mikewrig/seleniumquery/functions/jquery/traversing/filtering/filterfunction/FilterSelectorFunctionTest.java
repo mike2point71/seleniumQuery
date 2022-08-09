@@ -28,8 +28,8 @@ import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.collection.IsEmptyCollection.empty;
 import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.junit.Assert.assertThat;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObjectWithAtLeastOneElement;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObjectWithElements;
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObjectWithAtLeastOneElement;
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObjectWithElements;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebElementMother.createWebElementWithTag;
 
 public class FilterSelectorFunctionTest {

@@ -19,17 +19,17 @@ package ht.mikewrig.seleniumquery;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import testinfrastructure.testdouble.PseudoTestDoubleException;
-import testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother;
-import testinfrastructure.testdouble.ht.mikewrig.seleniumquery.functions.SeleniumQueryFunctionsMock;
+import testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother;
+import testinfrastructure.testdouble.io.github.seleniumquery.functions.SeleniumQueryFunctionsMock;
 
 import java.util.function.Predicate;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectDummy.createSeleniumQueryObjectDummy;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObjectWithSeleniumQueryFunctions;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.functions.MethodMockConfiguration.configureReturnValue;
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectDummy.createSeleniumQueryObjectDummy;
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother.createStubSeleniumQueryObjectWithSeleniumQueryFunctions;
+import static testinfrastructure.testdouble.io.github.seleniumquery.functions.MethodMockConfiguration.configureReturnValue;
 
 public class SeleniumQueryObjectTest {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.ht.mikewrig.seleniumquery.utils;
+package testinfrastructure.testdouble.io.github.seleniumquery.utils;
 
 import ht.mikewrig.seleniumquery.utils.DriverVersionUtils;
 import org.openqa.selenium.WebDriver;
@@ -47,14 +47,14 @@ public class DriverVersionUtilsTestBuilder {
                 return webDriver != null && webDriver.equals(d) && pseudoWithNativeSupport != null && pseudoWithNativeSupport.equals(p);
             }
 
-            @Override
-            public boolean isPhantomJSDriver(WebDriver driver) {
-                return isPhantomJSDriver;
-            }
-            @Override
-            public boolean isHtmlUnitDriver(WebDriver driver) {
-                return false;
-            }
+//            @Override
+//            public boolean isPhantomJSDriver(WebDriver driver) {
+//                return isPhantomJSDriver;
+//            }
+//            @Override
+//            public boolean isHtmlUnitDriver(WebDriver driver) {
+//                return false;
+//            }
         };
     }
 

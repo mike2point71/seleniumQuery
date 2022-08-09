@@ -31,7 +31,7 @@ public class SeleniumQueryPluginTest {
 
     @Before
     public void setUp() throws Exception {
-        $.driver().useHtmlUnit();
+        $.driver().useChrome();
         $.url(classNameToTestFileUrl(SeleniumQueryPluginTest.class));
         assertThat($("div").size(), is(7)); // negative test
     }

@@ -64,24 +64,6 @@ public class OperaDriverBuilderTest {
         // exception is thrown when the browser inits with the passed options
     }
 
-    @Test(expected = DriverBuilderTestUtil.VerySpecialExceptionOnlyWeThrow.class)
-    @SuppressWarnings("deprecation")
-    public void withCapabilities() {
-        // given
-        DesiredCapabilities operaBlink = DesiredCapabilities.operaBlink();
-        DesiredCapabilities capabilities = new DesiredCapabilities(operaBlink.getBrowserName(), operaBlink.getVersion(), operaBlink.getPlatform()) {
-            @Override
-            public boolean is(String capabilityName) {
-                throw new DriverBuilderTestUtil.VerySpecialExceptionOnlyWeThrow();
-            }
-        };
-        // when
-        $.driver().useOpera().autoDriverDownload().withCapabilities(capabilities);
-        DriverBuilderTestUtil.openAnyUrl();
-        // then
-        // exception is thrown when the browser inits with the passed capabilities
-    }
-
     @Test(expected = SeleniumQueryException.class)
     public void withoutBinary__shouldThrow_custom_SeleniumQueryException() {
         // when

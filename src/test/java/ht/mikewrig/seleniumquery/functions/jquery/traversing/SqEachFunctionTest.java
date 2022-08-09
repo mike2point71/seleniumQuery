@@ -25,7 +25,7 @@ import java.util.Map;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother.*;
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother.*;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebElementMother.createWebElementWithTag;
 
 public class SqEachFunctionTest {

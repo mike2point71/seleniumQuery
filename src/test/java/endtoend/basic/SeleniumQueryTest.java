@@ -24,11 +24,11 @@ import static testinfrastructure.testutils.SeleniumQueryObjectTestUtils.verifySe
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import ht.mikewrig.seleniumquery.SeleniumQuery;
 import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
+import org.openqa.selenium.chrome.ChromeDriver;
 import testinfrastructure.EndToEndTestUtils;
 
 public class SeleniumQueryTest {
@@ -54,12 +54,12 @@ public class SeleniumQueryTest {
 
     private void verifySeleniumQueryFieldAliasWorks(BrowserFunctions seleniumQueryField) {
         // given
-        HtmlUnitDriver driver = new HtmlUnitDriver();
+        ChromeDriver driver = new ChromeDriver();
         // when
         seleniumQueryField.driver().use(driver);
         seleniumQueryField.url(testPageUrl);
         // then
-        assertThat(driver.findElementById("d1").getText(), is("d1-text"));
+        assertThat(driver.findElement(By.id("d1")).getText(), is("d1-text"));
     }
 
     @Test
@@ -153,7 +153,7 @@ public class SeleniumQueryTest {
     }
 
     private void openSeleniumQueryWithHtmlUnitDriverAtTestPageAndLoadD1AndD2Fields() {
-        HtmlUnitDriver driver = new HtmlUnitDriver();
+        ChromeDriver driver = new ChromeDriver();
         SeleniumQuery.$.driver().use(driver);
         EndToEndTestUtils.openUrl(testPageUrl);
         this.d1 =  SeleniumQuery.$.driver().get().findElement(By.id("d1"));

@@ -24,7 +24,6 @@ import static testinfrastructure.testutils.DriverInTest.isFirefoxDriver;
 import static testinfrastructure.testutils.DriverInTest.isHtmlUnitDriver;
 import static testinfrastructure.testutils.DriverInTest.isIEDriver;
 import static testinfrastructure.testutils.DriverInTest.isOperaDriver;
-import static testinfrastructure.testutils.DriverInTest.isPhantomJSDriver;
 import static testinfrastructure.testutils.DriverInTest.isSafariDriver;
 
 import org.junit.ClassRule;
@@ -51,8 +50,6 @@ public class DoubleClickFunctionTest {
         if (isOperaDriver(driver)) {
             operaDiff++;
         } else if (isHtmlUnitDriver(driver)
-            || isIEDriver(driver)
-            || isPhantomJSDriver(driver)
             || isSafariDriver(driver)
             || isFirefoxDriver(driver)
             || isEdgeDriver(driver)) {

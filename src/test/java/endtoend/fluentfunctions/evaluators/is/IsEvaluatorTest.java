@@ -45,7 +45,7 @@ public class IsEvaluatorTest {
     @Test
     @JavaScriptEnabledOnly
     public void isEvaluator_fails_waitUntil() {
-        Assume.assumeFalse(DriverInTest.isPhantomJSDriver($.driver().get()));
+//        Assume.assumeFalse(DriverInTest.isPhantomJSDriver($.driver().get()));
         assertThrowsTimeoutException(
             __ ->
                 $("#bar").waitUntil(100).is(":enabled")
@@ -60,7 +60,7 @@ public class IsEvaluatorTest {
     @Test
     @JavaScriptEnabledOnly
     public void isEvaluator_fails_assertThat() {
-        Assume.assumeFalse(DriverInTest.isPhantomJSDriver($.driver().get()));
+//        Assume.assumeFalse(DriverInTest.isPhantomJSDriver($.driver().get()));
         assertThrowsAssertionError(
             __ ->
                 $("#bar").assertThat().is(":enabled")

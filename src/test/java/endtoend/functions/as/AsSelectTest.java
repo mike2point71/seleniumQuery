@@ -29,7 +29,7 @@ public class AsSelectTest {
 
     @Before
     public void setUp() throws Exception {
-        $.driver().useHtmlUnit();
+        $.driver().useChrome();
         $.url(classNameToTestFileUrl(AsSelectTest.class));
         assertThat($("select").val(), is("valueA")); // negative test
         assertThat($("input").val(), is("inputValueShouldNotBeAffected")); // negative test

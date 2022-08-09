@@ -26,6 +26,8 @@ import static testinfrastructure.testutils.EnvironmentTestUtils.isNotWindowsOS;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,7 +35,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import endtoend.browser.util.BrowserAgentTestUtils;
-import io.github.bonigarcia.wdm.ChromeDriverManager;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 public class ChromeDriverBuilderTest {
@@ -156,11 +157,11 @@ public class ChromeDriverBuilderTest {
     @Test
     public void autoDriverDownload__lambda() {
         // when
-        $.driver().useChrome().autoDriverDownload(x -> x.version("2.32")).headless();
+        $.driver().useChrome().autoDriverDownload(x -> x.driverVersion("2.32")).headless();
         // then
         BrowserAgentTestUtils.assertBrowserAgent(containsString("Chrome"));
         // some day, when the version below is too old, this test will fail. Replace the number below with latestVersion - 0.01
-        assertEquals("2.32", ChromeDriverManager.getInstance().getDownloadedVersion());
+        assertEquals("2.32", ChromeDriverManager.getInstance().getDownloadedDriverVersion());
     }
 
 }

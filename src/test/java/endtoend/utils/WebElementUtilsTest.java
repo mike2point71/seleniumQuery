@@ -31,9 +31,9 @@ public class WebElementUtilsTest {
 
     private void assertIsContentEditable(String selector, boolean isCE) {
         SeleniumQueryObject $el = $(selector);
-        if (!DriverVersionUtils.isHtmlUnitWithDisabledJavaScript($el)) {
-            $el.assertThat().prop("isContentEditable").isEqualTo(isCE);
-        }
+//        if (!DriverVersionUtils.isHtmlUnitWithDisabledJavaScript($el)) {
+//            $el.assertThat().prop("isContentEditable").isEqualTo(isCE);
+//        }
         Assert.assertEquals(selector + " failed isContentEditable test", isContentEditableXPath($el), isCE);
     }
 

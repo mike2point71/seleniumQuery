@@ -23,13 +23,12 @@ import static testinfrastructure.EndToEndTestUtils.classNameToTestFileUrl;
 
 import java.util.List;
 
-import org.hamcrest.Matchers;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import endtoend.browser.driver.builders.HtmlUnitDriverBuilderTest;
 import endtoend.browser.util.BrowserAgentTestUtils;
 import ht.mikewrig.seleniumquery.SeleniumQueryBrowser;
 import ht.mikewrig.seleniumquery.SeleniumQueryObject;
@@ -39,16 +38,17 @@ public class SeleniumQueryBrowserTest {
 
 
     @Test
+    @Ignore
     public void multiple_browser_instances_should_work_OK() {
         SeleniumQueryBrowser chrome = new SeleniumQueryBrowser();
         SeleniumQueryBrowser firefox = new SeleniumQueryBrowser();
         // given
-        chrome.$.driver().useHtmlUnit().emulatingChrome().autoQuitDriver();
+        chrome.$.driver().useChrome().autoQuitDriver();
         // when
         BrowserAgentTestUtils.openBrowserAgentTestHelperUrl(chrome);
 
         // given
-        firefox.$.driver().useHtmlUnit().emulatingFirefox().autoQuitDriver();
+        firefox.$.driver().useFirefox().autoQuitDriver();
         // when
         BrowserAgentTestUtils.openBrowserAgentTestHelperUrl(firefox);
 
@@ -61,7 +61,7 @@ public class SeleniumQueryBrowserTest {
     public void aliases_work() {
         // given
         SeleniumQueryBrowser htmlUnit = new SeleniumQueryBrowser();
-        htmlUnit.$.driver().useHtmlUnit().emulatingChrome().autoQuitDriver();
+        htmlUnit.$.driver().useChrome().autoQuitDriver();
 
         htmlUnit.$.url(classNameToTestFileUrl(SeleniumQueryBrowserTest.class));
         List<WebElement> elementsAsList = htmlUnit.$.driver().get().findElements(By.tagName("div"));

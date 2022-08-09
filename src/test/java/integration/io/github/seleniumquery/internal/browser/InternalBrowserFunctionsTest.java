@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package integration.ht.mikewrig.seleniumquery.internal.browser;
+package integration.io.github.seleniumquery.internal.browser;
 
 import static org.hamcrest.Matchers.closeTo;
 import static org.hamcrest.Matchers.is;
@@ -29,16 +29,16 @@ public class InternalBrowserFunctionsTest {
 
     private BrowserFunctions browserFunctions = new InternalBrowserFunctions();
 
-    @Test
-    @SuppressWarnings("deprecation")
-    public void pause__should_pause_for_the_given_time_in_millis() {
-        // given
-        long startingTime = System.currentTimeMillis();
-        // when
-        browserFunctions.pause(500);
-        // then
-        long timeSpent = System.currentTimeMillis() - startingTime;
-        assertThat(((double) timeSpent), is(closeTo(500d, 100d)));
-    }
+//    @Test
+//    @SuppressWarnings("deprecation")
+//    public void pause__should_pause_for_the_given_time_in_millis() {
+//        // given
+//        long startingTime = System.currentTimeMillis();
+//        // when
+//        browserFunctions.pause(500);
+//        // then
+//        long timeSpent = System.currentTimeMillis() - startingTime;
+//        assertThat(((double) timeSpent), is(closeTo(500d, 100d)));
+//    }
 
 }

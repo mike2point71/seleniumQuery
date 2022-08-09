@@ -18,6 +18,7 @@ package ht.mikewrig.seleniumquery.by.firstgen.xpath.component;
 
 import ht.mikewrig.seleniumquery.by.firstgen.xpath.TagComponentList;
 import ht.mikewrig.seleniumquery.by.firstgen.xpath.XPathComponentCompilerService;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
@@ -32,6 +33,7 @@ import static testinfrastructure.testdouble.org.openqa.selenium.SearchContextMot
 import static testinfrastructure.testdouble.org.openqa.selenium.SearchContextMother.createSearchContextThatReturnsWebElementsForXPath;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebElementDummy.createWebElementDummy;
 
+@Ignore
 public class TagComponentTest {
 
     final WebElement firstDummyWebElement = createWebElementDummy();

@@ -20,7 +20,6 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
 import java.util.List;
@@ -59,7 +58,7 @@ public class MixedSelectorsTest {
 	public void id_with_escape() {
 		List<WebElement> elements = $("#must\\:escape").get();
         // latest selenium is not complying with getAttribute()'s javadoc, it is returning "" in chrome/ff/ie when the attr is absent
-		assertIsOnlyOneElementWithDetails(elements, "h1", "must:escape", $.driver().get() instanceof HtmlUnitDriver ? null : "");
+		assertIsOnlyOneElementWithDetails(elements, "h1", "must:escape",  "");
 	}
 
 	@Test

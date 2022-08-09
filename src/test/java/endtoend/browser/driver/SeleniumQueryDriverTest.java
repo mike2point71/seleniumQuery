@@ -19,7 +19,7 @@ package endtoend.browser.driver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 
 import endtoend.browser.util.BrowserAgentTestUtils;
@@ -87,12 +87,12 @@ public class SeleniumQueryDriverTest {
     @Test
     public void useHtmlUnit__should_create_a_HtmlUnitDriver_upon_first_use() {
         // given
-        $.driver().useHtmlUnit();
+        $.driver().useChrome();
         // when
         WebDriver driver = $.driver().get();
         // then
         try {
-            assertThat(driver, instanceOf(HtmlUnitDriver.class));
+            assertThat(driver, instanceOf(ChromeDriver.class));
         } finally {
             $.driver().quit();
         }
@@ -105,7 +105,7 @@ public class SeleniumQueryDriverTest {
         $.driver().use(previousDriver);
         previousDriver.assertDriverWasNotQuit();
         // when
-        $.driver().useHtmlUnit();
+        $.driver().useChrome();
         // then
         previousDriver.assertDriverWasQuit();
     }
@@ -114,7 +114,7 @@ public class SeleniumQueryDriverTest {
     public void withWebDriverEventListener() {
         // given
         AtomicReference<String> openedUrl = new AtomicReference<>(null);
-        $.driver().useHtmlUnit().withWebDriverEventListener(new AbstractWebDriverEventListener() {
+        $.driver().useChrome().withWebDriverEventListener(new AbstractWebDriverEventListener() {
             @Override
             public void beforeNavigateTo(String url, WebDriver driver) {
                 openedUrl.set(url);

@@ -18,12 +18,12 @@ package testinfrastructure.testutils;
 
 import ht.mikewrig.seleniumquery.SeleniumQuery;
 import ht.mikewrig.seleniumquery.browser.BrowserFunctions;
+import org.junit.platform.commons.util.StringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import static ht.mikewrig.seleniumquery.SeleniumQuery.$;
-import static org.eclipse.jetty.util.StringUtil.isNotBlank;
 
 public class SauceLabsUtils {
 
@@ -71,7 +71,7 @@ public class SauceLabsUtils {
     private static void setBuildName(JavascriptExecutor webDriver) {
         // this code does not have tests (faking an env variable was not worth the trouble)
         String lastCommitHash = System.getenv("CI_COMMIT_ID");
-        if (isNotBlank(lastCommitHash)) {
+        if (StringUtils.isNotBlank(lastCommitHash)) {
             webDriver.executeScript("sauce:job-build=" + lastCommitHash);
         }
     }

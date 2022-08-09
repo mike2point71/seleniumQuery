@@ -16,7 +16,6 @@
 
 package testinfrastructure.testdouble.org.openqa.selenium;
 
-import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebElement;
 
 public class WebElementMother {
@@ -27,7 +26,7 @@ public class WebElementMother {
             // call a series of other functions on WebElement just to print a more complete error message
             @Override
             public void click() {
-                throw new ElementNotVisibleException("This web element is hidden, thus not clickable.");
+                throw new RuntimeException("This web element is hidden, thus not clickable.");
             }
         };
     }

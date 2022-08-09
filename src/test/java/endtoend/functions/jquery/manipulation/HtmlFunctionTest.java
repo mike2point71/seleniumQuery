@@ -40,45 +40,45 @@ public class HtmlFunctionTest {
     
     @Test
     public void html_function__element_with_nested_element_with_no_line_breaks() {
-    	if (DriverInTest.isHtmlUnitDriverEmulatingIE($.driver().get())) {
-    		assertThat($("div:eq(1)").html(), equalsIgnoringCaseWhiteSpaceAndQuotes("Spider <div>\"The Spidey\"</div> Man"));
-    	} else {
+//    	if (DriverInTest.isHtmlUnitDriverEmulatingIE($.driver().get())) {
+//    		assertThat($("div:eq(1)").html(), equalsIgnoringCaseWhiteSpaceAndQuotes("Spider <div>\"The Spidey\"</div> Man"));
+//    	} else {
     		assertThat($("div:eq(1)").html(), is("Spider <div>\"The Spidey\"</div> Man"));
-    	}
+//    	}
     }
     
     @Test
     public void html_function__element_with_nested_element_with_line_breaks() {
-    	if (DriverInTest.isHtmlUnitDriverEmulatingIE($.driver().get())) {
-	    	assertThat($("#nestedMultiLine").html(), equalsIgnoringCaseWhiteSpaceAndQuotes("ABC\n"+
-	    			"    	<div>DEF</div>\n"+
-	    			"    	<div>GHI</div>\n"+
-	    			"    	JKY\n"+
-	    			"    "));
-    	} else {
+//    	if (DriverInTest.isHtmlUnitDriverEmulatingIE($.driver().get())) {
+//	    	assertThat($("#nestedMultiLine").html(), equalsIgnoringCaseWhiteSpaceAndQuotes("ABC\n"+
+//	    			"    	<div>DEF</div>\n"+
+//	    			"    	<div>GHI</div>\n"+
+//	    			"    	JKY\n"+
+//	    			"    "));
+//    	} else {
 	    	assertThat($("#nestedMultiLine").html(), is("ABC\n"+
 			"    	<div>DEF</div>\n"+
 			"    	<div>GHI</div>\n"+
 			"    	JKY\n"+
 			"    "));
-    	}
+//    	}
     }
     
     @Test
     public void html_function__body() {
-    	if (DriverInTest.isHtmlUnitDriverEmulatingIE($.driver().get())) {
-	        assertThat($("body").html(),
-    		equalsIgnoringCaseWhiteSpaceAndQuotes("\n"+
-			"    <div>Batman</div>\n"+
-			"    <div>Spider <div>\"The Spidey\"</div> Man</div>\n"+
-			"    <div>Hulk</div>\n"+
-			"    <span>yo</span>\n"+
-			"    <div id=\"nestedMultiLine\">ABC\n"+
-			"    	<div>DEF</div>\n"+
-			"    	<div>GHI</div>\n"+
-			"    	JKY\n"+
-			"    </div>\n"));
-    	} else {
+//    	if (DriverInTest.isHtmlUnitDriverEmulatingIE($.driver().get())) {
+//	        assertThat($("body").html(),
+//    		equalsIgnoringCaseWhiteSpaceAndQuotes("\n"+
+//			"    <div>Batman</div>\n"+
+//			"    <div>Spider <div>\"The Spidey\"</div> Man</div>\n"+
+//			"    <div>Hulk</div>\n"+
+//			"    <span>yo</span>\n"+
+//			"    <div id=\"nestedMultiLine\">ABC\n"+
+//			"    	<div>DEF</div>\n"+
+//			"    	<div>GHI</div>\n"+
+//			"    	JKY\n"+
+//			"    </div>\n"));
+//    	} else {
 	        assertThat($("body").html(),
 	        is("\n"+
 			"    <div>Batman</div>\n"+
@@ -90,7 +90,7 @@ public class HtmlFunctionTest {
 			"    	<div>GHI</div>\n"+
 			"    	JKY\n"+
 			"    </div>\n"));
-    	}
+//    	}
     }
     
     

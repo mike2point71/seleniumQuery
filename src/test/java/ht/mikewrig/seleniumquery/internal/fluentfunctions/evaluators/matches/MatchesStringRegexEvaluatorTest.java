@@ -3,7 +3,7 @@ package ht.mikewrig.seleniumquery.internal.fluentfunctions.evaluators.matches;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother
     .createStubSeleniumQueryObjectWithElements;
 
 import org.junit.Test;

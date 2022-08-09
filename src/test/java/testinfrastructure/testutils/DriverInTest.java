@@ -24,7 +24,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -45,7 +44,7 @@ public class DriverInTest {
 
     public static boolean isHtmlUnitDriver(WebDriver driver) {
         restoreDriverVersionUtilsInstance();
-        return DriverVersionUtils.getInstance().isHtmlUnitDriver(driver);
+        return false;
     }
 
     public static boolean isHtmlUnitDriver(BrowserFunctions $) {
@@ -70,13 +69,13 @@ public class DriverInTest {
 
     @SuppressWarnings("deprecation")
     public static boolean isOperaDriver(WebDriver driver) {
-        return isDriver(driver, OperaDriver.class, BrowserType.OPERA, BrowserType.OPERA_BLINK);
+        return isDriver(driver, OperaDriver.class, BrowserType.OPERA);
     }
 
-    public static boolean isHtmlUnitDriverEmulatingIE(WebDriver webDriver) {
-        restoreDriverVersionUtilsInstance();
-        return DriverVersionUtils.isHtmlUnitDriverEmulatingIE(webDriver);
-    }
+//    public static boolean isHtmlUnitDriverEmulatingIE(WebDriver webDriver) {
+//        restoreDriverVersionUtilsInstance();
+//        return DriverVersionUtils.isHtmlUnitDriverEmulatingIE(webDriver);
+//    }
 
     public static boolean isChromeDriver(WebDriver webDriver) {
         return isDriver(webDriver, ChromeDriver.class, BrowserType.CHROME);
@@ -90,9 +89,9 @@ public class DriverInTest {
         return isDriver(webDriver, FirefoxDriver.class, BrowserType.FIREFOX);
     }
 
-    public static boolean isPhantomJSDriver(WebDriver webDriver) {
-        return isDriver(webDriver, PhantomJSDriver.class, BrowserType.PHANTOMJS);
-    }
+//    public static boolean isPhantomJSDriver(WebDriver webDriver) {
+//        return isDriver(webDriver, PhantomJSDriver.class, BrowserType.PHANTOMJS);
+//    }
 
     public static boolean isRemoteDriver(WebDriver webDriver) {
         return webDriver.getClass().equals(RemoteWebDriver.class);

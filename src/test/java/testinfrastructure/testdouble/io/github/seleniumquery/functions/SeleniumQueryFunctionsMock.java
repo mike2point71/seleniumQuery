@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.ht.mikewrig.seleniumquery.functions;
+package testinfrastructure.testdouble.io.github.seleniumquery.functions;
 
 import ht.mikewrig.seleniumquery.SeleniumQueryObject;
 import ht.mikewrig.seleniumquery.functions.SeleniumQueryFunctions;

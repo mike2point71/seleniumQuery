@@ -24,7 +24,7 @@ import static ht.mikewrig.seleniumquery.by.secondgen.finder.CssFinder.universalS
 import static ht.mikewrig.seleniumquery.by.secondgen.finder.XPathAndFilterFinder.pureXPath;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.utils.DriverVersionUtilsTestBuilder.createDriverVersionUtils;
+import static testinfrastructure.testdouble.io.github.seleniumquery.utils.DriverVersionUtilsTestBuilder.createDriverVersionUtils;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebDriverDummy.createWebDriverDummy;
 
 public class ElementFinderUtilsTest {

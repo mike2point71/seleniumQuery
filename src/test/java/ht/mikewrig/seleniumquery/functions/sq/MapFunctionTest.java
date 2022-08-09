@@ -18,9 +18,9 @@ package ht.mikewrig.seleniumquery.functions.sq;
 
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother
     .createStubSeleniumQueryObjectWithAtLeastOneElement;
-import static testinfrastructure.testdouble.ht.mikewrig.seleniumquery.SeleniumQueryObjectMother
+import static testinfrastructure.testdouble.io.github.seleniumquery.SeleniumQueryObjectMother
     .createStubSeleniumQueryObjectWithElements;
 import static testinfrastructure.testdouble.org.openqa.selenium.WebElementMother.createWebElementWithTag;
 

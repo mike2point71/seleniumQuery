@@ -18,7 +18,9 @@ public class HeadlessTestUtils {
 
     private static void assertTitle(WebDriver driver, String expected) {
         driver.get(classNameToTestFileUrl(HeadlessTestUtils.class));
-        $.pause(100);
+        try { Thread.sleep(100); }
+        catch (InterruptedException ignored) { }
+//        $.pause(100);
         assertEquals(expected, $.title());
     }
 

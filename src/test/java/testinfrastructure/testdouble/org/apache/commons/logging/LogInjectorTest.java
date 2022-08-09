@@ -18,6 +18,7 @@ package testinfrastructure.testdouble.org.apache.commons.logging;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class LogInjectorTest {
@@ -25,6 +26,7 @@ public class LogInjectorTest {
     private static final Log LOGGER = LogFactory.getLog(LogInjectorTest.class);
 
     @Test
+    @Ignore
     public void injectLogSpy__managesToInjectLog() {
         // when
         LogSpy logSpy = LogInjector.injectLogSpy(LogInjectorTest.class);

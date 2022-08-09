@@ -20,6 +20,7 @@ import endtoend.crossdriver.driverbugs.PhantomJSCheckedSelectorBugTest;
 import ht.mikewrig.seleniumquery.by.firstgen.css.pseudoclasses.CheckedPseudoClass;
 import ht.mikewrig.seleniumquery.by.secondgen.finder.ElementFinder;
 import ht.mikewrig.seleniumquery.by.secondgen.finder.ElementFinderUtilsTest;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static ht.mikewrig.seleniumquery.by.secondgen.csstree.condition.pseudoclass.PseudoClassAssertFinderUtils.*;
@@ -65,6 +66,7 @@ public class CssCheckedPseudoClassTest {
      * See: {@link PhantomJSCheckedSelectorBugTest}
      */
     @Test
+    @Ignore
     public void toElementFinder__when_driver_is_PHANTOMJSDRIVER_it_behaves_like_it_does_NOT_have_native_support() {
         ElementFinder previousFinder = ElementFinderUtilsTest.universalSelectorFinder(createWebDriverEmulatingPhantomJSAndWithNativeSupporForPseudo(CHECKED_PSEUDO));
         assertPseudoClassHasFinder(

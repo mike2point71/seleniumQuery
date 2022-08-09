@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package testinfrastructure.testdouble.ht.mikewrig.seleniumquery;
+package testinfrastructure.testdouble.io.github.seleniumquery;
 
 import java.util.Iterator;
 import java.util.List;

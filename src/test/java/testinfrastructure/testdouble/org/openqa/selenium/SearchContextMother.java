@@ -18,8 +18,6 @@ package testinfrastructure.testdouble.org.openqa.selenium;
 
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.FindsById;
-import org.openqa.selenium.internal.FindsByXPath;
 import testinfrastructure.testdouble.PseudoTestDoubleException;
 
 import java.util.Collections;
@@ -27,11 +25,11 @@ import java.util.List;
 
 public class SearchContextMother {
 
-    private static class SearchContextDummy extends WebDriverDummy implements SearchContext, FindsById, FindsByXPath {
-        @Override public WebElement findElementById(String s) { throw new PseudoTestDoubleException(); }
-        @Override public List<WebElement> findElementsById(String s) { throw new PseudoTestDoubleException(); }
-        @Override public WebElement findElementByXPath(String s) { throw new PseudoTestDoubleException(); }
-        @Override public List<WebElement> findElementsByXPath(String s) { throw new PseudoTestDoubleException(); }
+    private static class SearchContextDummy extends WebDriverDummy implements SearchContext {
+        public WebElement findElementById(String s) { throw new PseudoTestDoubleException(); }
+        public List<WebElement> findElementsById(String s) { throw new PseudoTestDoubleException(); }
+        public WebElement findElementByXPath(String s) { throw new PseudoTestDoubleException(); }
+        public List<WebElement> findElementsByXPath(String s) { throw new PseudoTestDoubleException(); }
     }
 
     public static SearchContext createSearchContextThatReturnsWebElementForId(final String configuredId, final WebElement webElement) {

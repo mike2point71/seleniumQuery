@@ -29,7 +29,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import testinfrastructure.junitrule.SetUpAndTearDownDriver;
 
@@ -50,32 +49,32 @@ public class PhantomJSCheckedSelectorBugTest {
         }
     }
 
-    @Test
-    public void confirm_CHECKED_has_a_bug_and_does_NOT_bring_the_checked_OPTION_in_PhantomJS() {
-        /*
-         * Currently, these tests are only running under linux at Travis-CI.
-         * There, the PhantomJS version is pre-2.0 and thus this bug still exists.
-         *
-         * Under appveryor, OTOH, the phantomJS used is the one at src/test/resources.
-         * That one is v2.1, and the bug is fixed
-         */
-        if ($.driver().get() instanceof PhantomJSDriver) {
-            List<WebElement> checkedElements = $.driver().get().findElements(By.cssSelector(":checked"));
-            if (isNotWindowsOS()) {
-                // so, under linux (Travis-CI), there is a bug
-                try {
-                    assertThat(checkedElements, hasSize(2));
-                } catch (AssertionError e) {
-                    for (int i = 0; i < 50; i++) {
-                        System.out.println("Error: " + e.getMessage());
-                    }
-                    assertThat(checkedElements, hasSize(3));
-                }
-            } else {
-                // and under windows (Appveyor), it works
-                assertThat(checkedElements, hasSize(3));
-            }
-        }
-    }
+//    @Test
+//    public void confirm_CHECKED_has_a_bug_and_does_NOT_bring_the_checked_OPTION_in_PhantomJS() {
+//        /*
+//         * Currently, these tests are only running under linux at Travis-CI.
+//         * There, the PhantomJS version is pre-2.0 and thus this bug still exists.
+//         *
+//         * Under appveryor, OTOH, the phantomJS used is the one at src/test/resources.
+//         * That one is v2.1, and the bug is fixed
+//         */
+//        if ($.driver().get() instanceof PhantomJSDriver) {
+//            List<WebElement> checkedElements = $.driver().get().findElements(By.cssSelector(":checked"));
+//            if (isNotWindowsOS()) {
+//                // so, under linux (Travis-CI), there is a bug
+//                try {
+//                    assertThat(checkedElements, hasSize(2));
+//                } catch (AssertionError e) {
+//                    for (int i = 0; i < 50; i++) {
+//                        System.out.println("Error: " + e.getMessage());
+//                    }
+//                    assertThat(checkedElements, hasSize(3));
+//                }
+//            } else {
+//                // and under windows (Appveyor), it works
+//                assertThat(checkedElements, hasSize(3));
+//            }
+//        }
+//    }
 
 }

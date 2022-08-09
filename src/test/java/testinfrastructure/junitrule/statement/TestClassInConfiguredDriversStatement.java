@@ -21,7 +21,6 @@ import static testinfrastructure.junitrule.config.DriverInstantiator.EDGE;
 import static testinfrastructure.junitrule.config.DriverInstantiator.FIREFOX;
 import static testinfrastructure.junitrule.config.DriverInstantiator.FIREFOX_HEADLESS;
 import static testinfrastructure.junitrule.config.DriverInstantiator.OPERA;
-import static testinfrastructure.junitrule.config.DriverInstantiator.PHANTOMJS;
 import static testinfrastructure.junitrule.config.RemoteInstantiator.REMOTE_CHROME;
 import static testinfrastructure.junitrule.config.RemoteInstantiator.REMOTE_CHROME_OSX;
 import static testinfrastructure.junitrule.config.RemoteInstantiator.REMOTE_CHROME_W7;
@@ -65,43 +64,43 @@ public class TestClassInConfiguredDriversStatement extends Statement {
 		executeTestOnFirefox();
 		executeTestOnEdge();
 		executeTestOnOpera();
-		executeTestOnIE();
-		executeTestOnPhantomJS();
+//		executeTestOnIE();
+//		executeTestOnPhantomJS();
 		executeTestOnRemote();
 		testClassSession.reportSummaryOfAllFailures();
 	}
 
 	private void executeTestOnHtmlUnits() {
-		executeTestOnHtmlUnitEmulatingChromeJavaScriptOn();
-		executeTestOnHtmlUnitEmulatingChromeJavaScriptOff();
-		executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOn();
-		executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOff();
-		executeTestOnHtmlUnitEmulatingIEJavaScriptOn();
-		executeTestOnHtmlUnitEmulatingIEJavaScriptOff();
+//		executeTestOnHtmlUnitEmulatingChromeJavaScriptOn();
+//		executeTestOnHtmlUnitEmulatingChromeJavaScriptOff();
+//		executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOn();
+//		executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOff();
+//		executeTestOnHtmlUnitEmulatingIEJavaScriptOn();
+//		executeTestOnHtmlUnitEmulatingIEJavaScriptOff();
 	}
 
-	private void executeTestOnHtmlUnitEmulatingChromeJavaScriptOn() {
-		boolean shouldExecute = driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOn()  || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_ON_ONLY
-																					 || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_ON_AND_OFF;
-		executeTestOn(shouldExecute, DriverInstantiator.HTMLUNIT_CHROME_JS_ON, YES);
-	}
-	private void executeTestOnHtmlUnitEmulatingChromeJavaScriptOff() {
-		boolean shouldExecute = driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOff() || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_OFF_ONLY
-																					 || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_ON_AND_OFF;
-		executeTestOn(shouldExecute, DriverInstantiator.HTMLUNIT_CHROME_JS_OFF, NO);
-	}
-	private void executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOn()  {
-		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOn(), DriverInstantiator.HTMLUNIT_FIREFOX_JS_ON, YES);
-	}
-	private void executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOff() {
-		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOff(), DriverInstantiator.HTMLUNIT_FIREFOX_JS_OFF, NO);
-	}
-	private void executeTestOnHtmlUnitEmulatingIEJavaScriptOn()     {
-		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOn(), DriverInstantiator.HTMLUNIT_IE_JS_ON, YES);
-	}
-	private void executeTestOnHtmlUnitEmulatingIEJavaScriptOff()    {
-		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOff(), DriverInstantiator.HTMLUNIT_IE_JS_OFF, NO);
-	}
+//	private void executeTestOnHtmlUnitEmulatingChromeJavaScriptOn() {
+//		boolean shouldExecute = driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOn()  || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_ON_ONLY
+//																					 || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_ON_AND_OFF;
+//		executeTestOn(shouldExecute, DriverInstantiator.HTMLUNIT_CHROME_JS_ON, YES);
+//	}
+//	private void executeTestOnHtmlUnitEmulatingChromeJavaScriptOff() {
+//		boolean shouldExecute = driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOff() || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_OFF_ONLY
+//																					 || driverToRunTestsIn == DriverToRunTestsIn.HTMLUNIT_CHROME_JS_ON_AND_OFF;
+//		executeTestOn(shouldExecute, DriverInstantiator.HTMLUNIT_CHROME_JS_OFF, NO);
+//	}
+//	private void executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOn()  {
+//		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOn(), DriverInstantiator.HTMLUNIT_FIREFOX_JS_ON, YES);
+//	}
+//	private void executeTestOnHtmlUnitEmulatingFirefoxJavaScriptOff() {
+//		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOff(), DriverInstantiator.HTMLUNIT_FIREFOX_JS_OFF, NO);
+//	}
+//	private void executeTestOnHtmlUnitEmulatingIEJavaScriptOn()     {
+//		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOn(), DriverInstantiator.HTMLUNIT_IE_JS_ON, YES);
+//	}
+//	private void executeTestOnHtmlUnitEmulatingIEJavaScriptOff()    {
+//		executeTestOn(driverToRunTestsIn.canRunHtmlUnitWithJavaScriptOff(), DriverInstantiator.HTMLUNIT_IE_JS_OFF, NO);
+//	}
 
     private void executeTestOnChrome() {
         executeTestOn(driverToRunTestsIn == DriverToRunTestsIn.CHROME_NO_AUTODOWNLOAD, DriverInstantiator.CHROME_NO_AUTODOWNLOAD, YES);
@@ -112,9 +111,9 @@ public class TestClassInConfiguredDriversStatement extends Statement {
         executeTestOn(driverToRunTestsIn.canRunChromeHeadless(), DriverInstantiator.CHROME_HEADLESS, YES);
     }
 
-    private void executeTestOnIE() {
-        executeTestOn(driverToRunTestsIn.canRunIE(), DriverInstantiator.IE, YES);
-    }
+//    private void executeTestOnIE() {
+//        executeTestOn(driverToRunTestsIn.canRunIE(), DriverInstantiator.IE, YES);
+//    }
 
     private void executeTestOnFirefox() {
         executeTestOn(driverToRunTestsIn.canRunFirefox(), FIREFOX, YES);
@@ -129,9 +128,9 @@ public class TestClassInConfiguredDriversStatement extends Statement {
         executeTestOn(driverToRunTestsIn.canRunOpera(), OPERA, YES);
     }
 
-    private void executeTestOnPhantomJS() {
-        executeTestOn(driverToRunTestsIn.canRunPhantomJS(), PHANTOMJS, YES);
-    }
+//    private void executeTestOnPhantomJS() {
+//        executeTestOn(driverToRunTestsIn.canRunPhantomJS(), PHANTOMJS, YES);
+//    }
 
 	private void executeTestOnRemote() {
         boolean shouldRunRemoteTests = driverToRunTestsIn.canRunRemote() || driverToRunTestsIn == DriverToRunTestsIn.REMOTE;

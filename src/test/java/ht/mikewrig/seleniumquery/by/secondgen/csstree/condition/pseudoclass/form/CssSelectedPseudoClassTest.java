@@ -21,6 +21,7 @@ import ht.mikewrig.seleniumquery.by.firstgen.css.pseudoclasses.CheckedPseudoClas
 import ht.mikewrig.seleniumquery.by.firstgen.css.pseudoclasses.SelectedPseudoClass;
 import ht.mikewrig.seleniumquery.by.secondgen.finder.ElementFinder;
 import ht.mikewrig.seleniumquery.by.secondgen.finder.ElementFinderUtilsTest;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
@@ -92,6 +93,7 @@ public class CssSelectedPseudoClassTest {
      * See: {@link PhantomJSCheckedSelectorBugTest}
      */
     @Test
+    @Ignore
     public void toElementFinder__when_driver_is_PHANTOMJSDRIVER_it_behaves_like_it_does_NOT_have_native_support() {
         WebDriver driver = createWebDriverEmulatingPhantomJSAndWithNativeSupporForPseudo(CHECKED_PSEUDO);
         ElementFinder previousFinder = universalSelectorFinder(driver);
